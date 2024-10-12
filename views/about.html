@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Lego Collection</title>
+    <title>About - Ujjwal's Lego World</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f3f4f6;
+            background-color: #eef2f7;
             margin: 0;
             padding: 0;
             color: #333;
         }
+
         nav {
-            background-color: #1e293b;
+            background-color: #0f172a;
             padding: 1rem;
             position: relative;
         }
+
         nav .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 1rem;
+            margin-left: 1.5rem;
+            font-weight: 600;
         }
+
         .menu-icon {
             display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
         }
+
         .dropdown-content {
-            background-color: #334155;
+            background-color: #1e293b;
             display: none;
             position: absolute;
             top: 2.5rem;
@@ -41,94 +50,161 @@
             padding: 1rem;
             border-radius: 0.5rem;
         }
+
         .dropdown-content a {
             display: block;
             color: white;
             margin-bottom: 0.5rem;
         }
+
         .dropdown-content a:hover {
-            color: #a0e1eb;
+            color: #22d3ee;
         }
+
         .dropdown:hover .dropdown-content {
             display: block;
         }
+
         .hero {
             padding: 5rem 1rem;
             text-align: center;
-            background-image: url('https://images.unsplash.com/photo-1611817753462-067d0df8a75c?auto=format&q=80&fit=crop&w=1920');
+            background-image: url('https://images.unsplash.com/photo-1728088734769-9cc6bef11087?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
             color: white;
+            background-position: center;
+            position: relative;
         }
+
         .hero h1 {
             font-size: 4rem;
             margin-bottom: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            display: inline-block;
         }
+
         .hero p {
             font-size: 1.5rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.5rem;
+            display: inline-block;
         }
+
         .about-content {
-            padding: 3rem 1rem;
+            padding: 4rem 1rem;
+            background-color: #fff;
         }
+
         .about-content h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
         }
+
         .about-content p {
             margin-bottom: 1rem;
-            line-height: 1.6;
+            line-height: 1.8;
         }
+
         .skills {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             margin-top: 3rem;
+            flex-wrap: wrap;
         }
+
         .skills div {
             background-color: white;
             padding: 2rem;
             border-radius: 0.5rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            flex: 1;
-            margin: 0 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            width: 30%;
+            margin-bottom: 2rem;
         }
+
         .skills img {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             margin-bottom: 1rem;
         }
+
+        .skills h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonials {
+            padding: 4rem 1rem;
+            background-color: #f8fafc;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-item {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 0 auto 1.5rem auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
         footer {
-            background-color: #1e293b;
+            background-color: #0f172a;
             color: white;
-            padding: 1rem;
+            padding: 2rem;
             text-align: center;
         }
+
+        footer .social-icons {
+            margin-top: 1rem;
+        }
+
+        footer .social-icons a {
+            margin: 0 0.5rem;
+            display: inline-block;
+        }
+
+        footer .social-icons img {
+            width: 30px;
+        }
+
         @media(max-width: 768px) {
             .menu-icon {
                 display: block;
-                color: white;
-                font-size: 1.5rem;
-                cursor: pointer;
             }
+
             .skills {
                 flex-direction: column;
-                gap: 2rem;
+                align-items: center;
+            }
+
+            .skills div {
+                width: 80%;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav>
         <div class="container">
-            <a href="/" class="text-2xl font-bold">Lego Collection</a>
+            <a href="/" class="text-2xl font-bold">Ujjwal's Lego World</a>
             <div class="flex space-x-4 items-center">
-                <a href="/about" class="active hover:underline">About</a>
+                <a href="/about" class="hover:underline">About</a>
+                <a href="/lego/collections" class="hover:underline">Collections</a>
+                <a href="/blog" class="hover:underline">Blog</a>
                 <div class="dropdown relative">
                     <span class="menu-icon">☰</span>
                     <div class="dropdown-content">
                         <a href="/lego/sets?theme=technic">Technic</a>
                         <a href="/lego/sets?theme=star-wars">Star Wars</a>
-                        <a href="/lego/sets?theme=city">City</a>
+                        <a href="/lego/sets?theme=architecture">Architecture</a>
                     </div>
                 </div>
             </div>
@@ -137,8 +213,8 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>About Me</h1>
-        <p>The Creator Behind the Lego Collection</p>
+        <h1>Welcome to My Lego World</h1>
+        <p>Explore the world of creativity and innovation with me, Ujjwal Chhetri</p>
     </section>
 
     <!-- About Content Section -->
@@ -146,17 +222,17 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Left Column: Image -->
             <div>
-                <img src="https://images.unsplash.com/photo-1728410994982-e376651ba722?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Me Image" class="w-full h-96 object-cover rounded-lg">
+                <img src="https://images.unsplash.com/photo-1603982111168-e6ecf5f5a59c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Ujjwal Chhetri Image" class="w-full h-96 object-cover rounded-lg">
             </div>
 
             <!-- Right Column: Text -->
             <div class="flex flex-col justify-center">
-                <h2 class="text-2xl font-bold mb-4">Hi, I'm Bibek Poudel</h2>
+                <h2 class="text-3xl font-bold mb-4">Hi, I'm Ujjwal Chhetri</h2>
                 <p class="text-lg mb-4">
-                    I’m passionate about Lego and programming! I've been collecting Lego sets since childhood and now I'm combining that with my love for coding to build this website. I am currently studying Computer Programming and pursuing my love for technology.
+                    I’m a lifelong Lego enthusiast and an aspiring programmer. I’ve been collecting Lego sets and building intricate designs for years. Now, I’m combining my love for creativity with technology to showcase this passion on the web.
                 </p>
                 <p class="text-lg mb-4">
-                    Besides Lego, I enjoy coding, gaming, and exploring cutting-edge technologies. This website reflects both my love for Lego and my skills in web development.
+                    Besides Lego, I enjoy coding, gaming, and learning about the latest innovations in web development. This site is a fusion of my web design skills and my love for creative building blocks.
                 </p>
             </div>
         </div>
@@ -165,25 +241,68 @@
         <div class="skills container mx-auto mt-10">
             <div>
                 <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 Icon">
-                <h3 class="text-xl font-bold">HTML5</h3>
-                <p>Experienced in creating responsive web layouts.</p>
+                <h3>HTML5</h3>
+                <p>Master at creating structured, accessible, and modern web layouts.</p>
             </div>
             <div>
                 <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 Icon">
-                <h3 class="text-xl font-bold">CSS3</h3>
-                <p>Skilled in styling and animating web elements.</p>
+                <h3>CSS3</h3>
+                <p>Crafting visually stunning and responsive designs with animations and transitions.</p>
             </div>
             <div>
                 <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript Icon">
-                <h3 class="text-xl font-bold">JavaScript</h3>
-                <p>Proficient in adding interactivity and functionality.</p>
+                <h3>JavaScript</h3>
+                <p>Building dynamic, interactive web applications with seamless functionality.</p>
             </div>
+            <div>
+                <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React Icon">
+                <h3>React</h3>
+                <p>Experienced in building component-based, reusable UI elements with React.</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js Icon">
+                <h3>Node.js</h3>
+                <p>Server-side development for real-time, scalable applications with JavaScript.</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/color/48/000000/database.png" alt="Database Icon">
+                <h3>Databases</h3>
+                <p>Skilled in working with relational and NoSQL databases for data management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial-item">
+            <p>"Ujjwal's dedication to both Lego and web development is inspiring. His creativity shines through in every project." - Lego Enthusiast</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"A unique blend of technical expertise and artistic vision. Ujjwal has an exceptional eye for design and functionality." - Web Developer</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Ujjwal's website perfectly showcases his Lego passion with cutting-edge web development skills. Impressive work!" - Tech Blogger</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Lego Collection by Bibek Poudel. All rights reserved.</p>
+        <p>&copy; 2024 Ujjwal's Lego World. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/ujjwal.chhetri" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/ujjwal_chhetri" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com/in/ujjwal-chhetri" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com/ujjwal.chhetri" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
+            </a>
+        </div>
     </footer>
 
     <script>
@@ -194,4 +313,5 @@
         });
     </script>
 </body>
+
 </html>
